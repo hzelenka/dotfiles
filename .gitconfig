@@ -1,0 +1,44 @@
+# Mostly based on https://github.com/eevee/rc/blob/master/.gitconfig
+
+[user]
+    email = hczelenka@gmail.com
+    name = Henry Zelenka
+[merge]
+    conflictstyle = diff3
+[color "branch"]
+    current = yellow reverse
+    local = yellow
+    remote = green
+[color "diff"]
+    meta = yellow bold
+    frag = magenta bold
+    old = red bold
+    new = green bold
+[color "status"]
+    added = yellow
+    changed = green
+    untracked = cyan
+[alias]
+    st = status
+    ss = stash save
+    sp = stash pop
+    sh = stash show
+    sd = stash drop
+    sl = stash list
+    cm = commit
+    br = branch --sort=-committerdate
+    co = checkout
+    cp = cherry-pick
+    fo = fetch origin
+    mm = merge origin/master --no-edit
+    df = diff
+    lg = log --oneline --graph --decorate
+    p = push origin HEAD
+[push]
+    default = current
+[pager]
+    branch = false
+    stash = false
+[init]
+    defaultBranch = main
+
